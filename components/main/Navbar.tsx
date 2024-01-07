@@ -56,7 +56,6 @@ const Navbar = () => {
           </a>
           <a
             href="https://discordapp.com/users/901734678803927060"
-            className="text-purple-00"
             target="_blank"
             rel="noopener noreferrer"
           >

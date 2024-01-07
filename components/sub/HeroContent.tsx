@@ -36,7 +36,7 @@ const HeroContent = () => {
           <span>
             Hey, I'm{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Perseus <br />
+              Perseus! <br />
             </span>
             A Fullstack Dev
           </span>
@@ -49,13 +49,6 @@ const HeroContent = () => {
           I&apos;m a Full Stack Software Engineer with experience in Website,
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
-
-        <motion.a
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-        >
-          Learn More!
-        </motion.a>
       </div>
 
       <motion.div

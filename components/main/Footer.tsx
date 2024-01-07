@@ -21,7 +21,7 @@ const Footer = () => {
                 className="flex flex-row items-center my-[15px] cursor-pointer"
               >
                 <RxGithubLogo />
-                <span className="text-[15px] ml-[6px]">Github</span>
+                <span className="text-[15px] ml-[6px] hover:text-cyan-200">Github</span>
               </a>
               <a
                 href="https://discordapp.com/users/901734678803927060"
@@ -30,7 +30,7 @@ const Footer = () => {
                 className="flex flex-row items-center my-[15px] cursor-pointer"
               >
                 <RxDiscordLogo />
-                <span className="text-[15px] ml-[6px]">Discord</span>
+                <span className="text-[15px] ml-[6px] hover:text-cyan-200">Discord</span>
               </a>
               <a
                 href="https://twitter.com/rayyanaslam16"
@@ -39,16 +39,16 @@ const Footer = () => {
                 className="flex flex-row items-center my-[15px] cursor-pointer"
               >
                 <RxTwitterLogo />
-                <span className="text-[15px] ml-[6px]">Twitter</span>
+                <span className="text-[15px] ml-[6px] hover:text-cyan-200">Twitter</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/rayyan-aslam/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-row items-center my-[15px] cursor-pointer"
+                className="flex flex-row items-center my-[15px]"
               >
                 <RxLinkedinLogo />
-                <span className="text-[15px] ml-[6px]">Linkedin</span>
+                <span className="text-[15px] ml-[6px] hover:text-cyan-200">Linkedin</span>
               </a>
             </div>
           </div>

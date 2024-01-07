@@ -8,8 +8,8 @@ import Navbar from "@/components/main/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Space",
-  description: "Space",
+  title: "Perseus",
+  description: "Perseus",
 };
 
 export default function RootLayout({

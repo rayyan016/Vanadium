@@ -36,7 +36,7 @@ const HeroContent = () => {
           <span>
             Hey, I&apos;m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              Perseus! <br />
+              Rayyan! <br />
             </span>
             <span className="text-3xl md:text-5xl lg:text-6xl">A Fullstack Dev</span>
           </span>

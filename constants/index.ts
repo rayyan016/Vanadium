@@ -74,12 +74,12 @@ export const Backend_skill = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "C#",
-    Image: "/cSharp.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "C#",
+  //   Image: "/cSharp.png",
+  //   width: 80,
+  //   height: 80,
+  // },
   {
     skill_name: "Mongo db",
     Image: "/mongodb.png",
@@ -117,16 +117,32 @@ export const Languages = [
 
 export const Experiences = [
   {
-    title: "Software Engineering Intern",
-    company: "Tech Company A",
-    duration: "June 2021 - August 2021",
-    description: "Worked on developing and optimizing web applications...",
+    title: "Associate Product QA Developer",
+    company: "Epicor Software India",
+    duration: "October 2024 - Present",
+    description: `
+      - Payments
+      - Flask
+    `,
   },
   {
-    title: "Frontend Developer",
-    company: "Tech Company B",
-    duration: "September 2021 - December 2021",
-    description:
-      "Led the redesign of the company website, improving user experience...",
+    title: "Product Development Intern",
+    company: "Epicor Software India",
+    duration: "February 2024 - October 2024",
+    description: `
+      - Developed the frontend for an internal tool using Angular 16, leveraging Kendo UI components for rich user interfaces.
+      - Designed additional features in the automation testing framework using Django Rest Framework.
+      - Created end-to-end API automation tests to validate business scenarios in the Retail vertical.
+    `,
+  },
+  {
+    title: "SDE Intern",
+    company: "MyFinfi World Pvt Ltd",
+    duration: "June 2023 - December 2023",
+    description: `
+      - Developed full-stack web applications from Figma wireframes, managing both frontend and backend development with unit testing using Jest.
+      - Utilized Vue.js and Nuxt.js along with Tailwind CSS to build intuitive, responsive user interfaces and implemented robust backend services with Node.js and Fastify.
+      - Created mobile applications using Flutter, delivering cross-platform apps focused on user experience and performance.
+    `,
   },
 ];

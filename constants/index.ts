@@ -114,3 +114,19 @@ export const Languages = [
     height: 80,
   },
 ];
+
+export const Experiences = [
+  {
+    title: "Software Engineering Intern",
+    company: "Tech Company A",
+    duration: "June 2021 - August 2021",
+    description: "Worked on developing and optimizing web applications...",
+  },
+  {
+    title: "Frontend Developer",
+    company: "Tech Company B",
+    duration: "September 2021 - December 2021",
+    description:
+      "Led the redesign of the company website, improving user experience...",
+  },
+];

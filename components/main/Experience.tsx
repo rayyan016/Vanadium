@@ -8,7 +8,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import { ArrowDownIcon } from "@heroicons/react/24/outline";
+import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { Experiences } from "@/constants";
 
 const Experience = () => {
@@ -38,26 +38,44 @@ const Experience = () => {
                   {experience.title}
                 </h2>
                 <h3 className="text-lg text-gray-300">{experience.company}</h3>
-                <p className="text-sm text-gray-400 mb-2">{experience.duration}</p>
+                <p className="text-sm text-gray-400 mb-2">
+                  {experience.duration}
+                </p>
 
-                <Accordion>
-                  <AccordionSummary expandIcon={<ArrowDownIcon />}>
-                    <span className="flex justify-between items-center w-full">
-                      <p className="text-sm text-gray-500">View Details </p>
-                      <span>{<ArrowDownIcon className="text-sm text-gray-500 w-4" />}</span>
-                    </span>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    {experience.description
-                      .trim()
-                      .split("\n")
-                      .map((line, idx) => (
-                        <p key={idx} className="text-sm">
-                          {line}
-                        </p>
-                      ))}
-                  </AccordionDetails>
-                </Accordion>
+                {/* Show accordion on small screens */}
+                <div className="block sm:hidden">
+                  <Accordion>
+                    <AccordionSummary
+                      expandIcon={<ChevronDownIcon className="w-4 mt-0.5" />}
+                    >
+                      <span className="flex justify-between items-center w-full">
+                        <p className="text-sm text-gray-500">View Details</p>
+                      </span>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      {experience.description
+                        .trim()
+                        .split("\n")
+                        .map((line, idx) => (
+                          <p key={idx} className="text-sm">
+                            {line}
+                          </p>
+                        ))}
+                    </AccordionDetails>
+                  </Accordion>
+                </div>
+
+                {/* Show description normally on medium and larger screens */}
+                <div className="hidden sm:block mt-2">
+                  {experience.description
+                    .trim()
+                    .split("\n")
+                    .map((line, idx) => (
+                      <p key={idx} className="text-sm">
+                        {line}
+                      </p>
+                    ))}
+                </div>
               </div>
             </TimelineContent>
           </TimelineItem>

@@ -44,12 +44,21 @@ const Experience = () => {
 
                 {/* Show accordion on small screens */}
                 <div className="block sm:hidden">
-                  <Accordion>
+                  <Accordion
+                    sx={{
+                      backgroundColor: "inherit",
+                      color: "white",
+                      border: "1px solid rgba(165, 243, 252, 0.9)", 
+                      borderRadius: "4px", 
+                    }}
+                  >
                     <AccordionSummary
-                      expandIcon={<ChevronDownIcon className="w-4 mt-0.5" />}
+                      expandIcon={
+                        <ChevronDownIcon className="w-4 text-white" />
+                      }
                     >
                       <span className="flex justify-between items-center w-full">
-                        <p className="text-sm text-gray-500">View Details</p>
+                        <p className="text-sm text-gray-300">View Details</p>
                       </span>
                     </AccordionSummary>
                     <AccordionDetails>

@@ -1,5 +1,3 @@
-import React from "react";
-
 import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
 
@@ -21,6 +19,7 @@ const Skills = () => {
             src={image.Image}
             width={image.width}
             height={image.height}
+            label={image.skill_name}
             index={index}
           />
         ))}
@@ -32,6 +31,7 @@ const Skills = () => {
             src={image.Image}
             width={image.width}
             height={image.height}
+            label={image.skill_name}
             index={index}
           />
         ))}
@@ -44,6 +44,7 @@ const Skills = () => {
             src={image.Image}
             width={image.width}
             height={image.height}
+            label={image.skill_name}
             index={index}
           />
         ))}

@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
@@ -10,9 +9,10 @@ interface Props {
   width: number;
   height: number;
   index: number;
+  label: string;
 }
 
-const SkillDataProvider = ({ src, width, height, index }: Props) => {
+const SkillDataProvider = ({ src, width, height, index, label }: Props) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -23,6 +23,7 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
   };
 
   const animationDelay = 0.3;
+
   return (
     <motion.div
       ref={ref}
@@ -31,8 +32,18 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
       animate={inView ? "visible" : "hidden"}
       custom={index}
       transition={{ delay: index * animationDelay }}
+      className="flex flex-col items-center"
     >
-      <Image src={src} width={width} height={height} alt="skill image" />
+      <div className="w-[100px] h-[100px] flex items-center justify-center bg-gray-800 rounded-lg">
+        <Image
+          src={src}
+          width={width}
+          height={height}
+          alt="skill image"
+          className="object-contain"
+        />
+      </div>
+      <p className="mt-2 text-center text-white text-sm">{label}</p>
     </motion.div>
   );
 };

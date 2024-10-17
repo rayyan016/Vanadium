@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 
@@ -38,7 +37,9 @@ const HeroContent = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               Rayyan! <br />
             </span>
-            <span className="text-3xl md:text-5xl lg:text-6xl">A Fullstack Dev</span>
+            <span className="text-3xl md:text-5xl lg:text-6xl">
+              A Fullstack Dev
+            </span>
           </span>
         </motion.div>
 

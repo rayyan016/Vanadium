@@ -1,5 +1,3 @@
-import React from "react";
-
 import { RxDiscordLogo, RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 
 const Navbar = () => {

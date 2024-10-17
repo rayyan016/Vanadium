@@ -1,4 +1,3 @@
-import React from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -48,8 +47,8 @@ const Experience = () => {
                     sx={{
                       backgroundColor: "inherit",
                       color: "white",
-                      border: "1px solid rgba(165, 243, 252, 0.9)", 
-                      borderRadius: "4px", 
+                      border: "1px solid rgba(165, 243, 252, 0.9)",
+                      borderRadius: "4px",
                     }}
                   >
                     <AccordionSummary

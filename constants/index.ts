@@ -121,8 +121,8 @@ export const Experiences = [
     company: "Epicor Software India",
     duration: "October 2024 - Present",
     description: `
-      - Payments
-      - Flask
+      - Enhancing features and functionality in the flask-based payments application.
+      - Ensuring automated test coverage for reliability and seamless integration for consuming applications.
     `,
   },
   {

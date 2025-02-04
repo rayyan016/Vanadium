@@ -31,7 +31,7 @@ const ProjectCard = ({ src, title, description, url }: Props) => {
             <RxGithubLogo />
           </Link>
         </div>
-        <p className="mt-2 text-gray-300">{description}</p>
+        <p className="mt-2 text-gray-300 whitespace-pre-line">{description}</p>
       </div>
     </div>
   );

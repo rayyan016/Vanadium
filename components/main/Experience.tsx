@@ -60,7 +60,7 @@ const Experience = () => {
                         <p className="text-sm text-gray-300">View Details</p>
                       </span>
                     </AccordionSummary>
-                    <AccordionDetails>
+                    <AccordionDetails className="text-sm space-y-3">
                       {experience.description
                         .trim()
                         .split("\n")
@@ -74,7 +74,7 @@ const Experience = () => {
                 </div>
 
                 {/* Show description normally on medium and larger screens */}
-                <ul className="list-disc list-inside text-sm space-y-3">
+                <ul className="hidden sm:block list-disc list-inside text-sm space-y-3">
                   {experience.description
                     .trim()
                     .split("\n")

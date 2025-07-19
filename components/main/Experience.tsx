@@ -74,16 +74,14 @@ const Experience = () => {
                 </div>
 
                 {/* Show description normally on medium and larger screens */}
-                <div className="hidden sm:block mt-2">
+                <ul className="list-disc list-inside text-sm space-y-3">
                   {experience.description
                     .trim()
                     .split("\n")
                     .map((line, idx) => (
-                      <p key={idx} className="text-sm">
-                        {line}
-                      </p>
+                      <li key={idx}>{line}</li>
                     ))}
-                </div>
+                </ul>
               </div>
             </TimelineContent>
           </TimelineItem>

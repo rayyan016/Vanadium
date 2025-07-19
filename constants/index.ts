@@ -62,12 +62,12 @@ export const Backend_skill = [
     width: 80,
     height: 80,
   },
-  // {
-  //   skill_name: "C#",
-  //   Image: "/cSharp.png",
-  //   width: 80,
-  //   height: 80,
-  // },
+  {
+    skill_name: "FastAPI",
+    Image: "/fastapi.png",
+    width: 80,
+    height: 80,
+  },
   {
     skill_name: "MongoDB",
     Image: "/mongodb.png",
@@ -107,12 +107,6 @@ export const Languages = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "Java",
-    Image: "/java.png",
-    width: 80,
-    height: 80,
-  },
 ];
 
 export const Experiences = [
@@ -121,18 +115,18 @@ export const Experiences = [
     company: "Epicor Software India",
     duration: "October 2024 - Present",
     description: `
-      - Enhancing features and functionality in the flask-based payments application.
-      - Ensuring automated test coverage for reliability and seamless integration for consuming applications.
+      Developed an AI-powered log-analysis framework (Python, FastAPI, Azure AI) to detect anomalies, reducing root-cause analysis from ~60 hours to under 60 seconds.
+      Developed a test automation framework from ground up using Python that improved testing efficiency to 98.75%, streamlining the QA process.
+      Developed an AI-powered unified knowledge-search platform (Next.js, FastAPI, Vector Search) to centralize diverse knowledge assets, cutting lookup time from hours to under 30 seconds.
     `,
   },
   {
-    title: "Product Development Intern",
+    title: "Intern",
     company: "Epicor Software India",
     duration: "February 2024 - October 2024",
     description: `
-      - Developed the frontend for an internal tool using Angular 16, leveraging Kendo UI components for rich user interfaces.
-      - Designed additional features in the automation testing framework using Django Rest Framework.
-      - Created end-to-end API automation tests to validate business scenarios in the Retail vertical.
+      Developed the frontend for an internal tool using Angular 16, leveraging Kendo UI components for rich user interfaces.
+      Created end-to-end API automation tests to validate business scenarios in the Retail vertical.
     `,
   },
   {
@@ -140,9 +134,9 @@ export const Experiences = [
     company: "MyFinfi World Pvt Ltd",
     duration: "June 2023 - December 2023",
     description: `
-      - Developed full-stack web applications from Figma wireframes, managing both frontend and backend development with unit testing using Jest.
-      - Utilized Vue.js and Nuxt.js along with Tailwind CSS to build intuitive, responsive user interfaces and implemented robust backend services with Node.js and Fastify.
-      - Created mobile applications using Flutter, delivering cross-platform apps focused on user experience and performance.
+      Developed full-stack web applications from Figma wireframes, managing both frontend and backend development with unit testing using Jest.
+      Utilized Vue.js and Nuxt.js along with Tailwind CSS to build intuitive, responsive user interfaces and implemented robust backend services with Node.js and Fastify.
+      Created mobile applications using Flutter, delivering cross-platform apps focused on user experience and performance.
     `,
   },
 ];
